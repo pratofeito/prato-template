@@ -6,7 +6,7 @@ ifeq ($(OS),Windows_NT)
 	B_RELEASE = --config Release
 	MOVE_CMD  = move
 	FILE_EXT  = .exe
-	PATH_MV	  = build\application $(file)$(FILE_EXT)
+	PATH_MV	  = build\application$(FILE_EXT) $(file)$(FILE_EXT)
 else
 	BUILD_ARG = -DCMAKE_BUILD_TYPE=Release
 	MOVE_CMD  = mv
