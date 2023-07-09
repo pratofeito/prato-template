@@ -10,7 +10,7 @@ set(FETCHCONTENT_QUIET FALSE)
 FetchContent_Declare(
   prato-engine
   GIT_REPOSITORY https://github.com/pratofeito/prato-engine.git
-  GIT_TAG dev
+  GIT_TAG main
 )
 FetchContent_MakeAvailable(prato-engine)
 
