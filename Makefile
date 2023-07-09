@@ -6,9 +6,11 @@ ifeq ($(OS),Windows_NT)
 	B_RELEASE = --config Release
 	MOVE_CMD  = move
 	FILE_EXT  = .exe
+	PATH_MV	  = build\application $(file)$(FILE_EXT)
 else
 	BUILD_ARG = -DCMAKE_BUILD_TYPE=Release
 	MOVE_CMD  = mv
+	PATH_MV	  = build/application $(file)
 endif
 
 .phony: run, install
@@ -16,8 +18,7 @@ endif
 install:
 	cmake -S . -B build $(BUILD_ARG)
 	cmake --build build $(B_RELEASE)
-	@$(MOVE_CMD) build/application build/$(file)$(FILE_EXT)
-	@$(MOVE_CMD) build/$(file) ./
+	@$(MOVE_CMD) $(PATH_MV)
 
 run: install
 	./$(file)
