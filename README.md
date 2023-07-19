@@ -20,7 +20,7 @@ Note: for this to work, you need to have all dependendencies installed! In the e
  - Git. Same as above, check [here](https://git-scm.com/download/win) for the Windows version.
  - CMake. Same as above again, check [here](https://cmake.org/download/) for Windows.
 
-Note for Linux users: SFML has some dependencies that are all already present on Windows, but not probably on Linux (they are listed [here](https://www.sfml-dev.org/tutorials/2.6/compile-with-cmake.php)). If you face some error message, check what package contains the devel version of what you need. In a default Fedora installation, I needed to download the following packages: `systemd-devel openal-devel libvorbis-devel flac-devel` for udev, openal, vorbis and flac.
+Note for Linux users: SFML has some dependencies that are all already present on Windows, but not probably on Linux (they are listed [here](https://www.sfml-dev.org/tutorials/2.6/compile-with-cmake.php)). If you face some error message, check what package contains the devel version of what you need. In a default Fedora installation, I needed to download the following packages: `systemd-devel openal-devel libvorbis-devel flac-devel freetype-devel libXrandr-devel mesa-libGL-devel libX11-devel` for udev, openal, vorbis, flac, freetype, xrandr, opengl and x11 .
 
 ## How this works?
 
